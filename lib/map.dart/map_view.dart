@@ -25,7 +25,6 @@ class _MapVoewState extends State<MapVoew> with TickerProviderStateMixin {
   late final MapController mapController;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     mapController = MapController();
     _authManager = Get.find();

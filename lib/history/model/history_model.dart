@@ -2,7 +2,6 @@
 //
 //     final historyModel = historyModelFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 import 'dart:convert';
 
 HistoryModel historyModelFromJson(String str) =>

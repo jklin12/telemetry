@@ -5,9 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:telemetry/absensi/absensi_from_view.dart';
 import 'package:telemetry/history/database/database_helper.dart';
-import 'package:telemetry/history/history_form_view.dart';
 import 'package:telemetry/history/model/history_model.dart';
 import 'package:telemetry/history/service/cek_absen_service.dart';
 import 'package:telemetry/history/service/history_delete_service.dart';
@@ -54,7 +52,7 @@ class HistoryIndexController extends GetxController {
           }
         } else {
           for (var element in value) {
-            var postval;
+            FormData postval;
             if (element['file'] != '') {
               postval = FormData({
                 "station": element['statonId'],

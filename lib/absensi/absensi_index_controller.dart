@@ -41,8 +41,8 @@ class AbsensiIndexController extends GetxController {
   void storeData(String token, FormData postVal) async {
     isDataLoading(true);
     final response = await service.storeData(token, postVal);
-    print(response!.success);
-    if (response.success) {
+    //print(response!.success);
+    if (response!.success) {
       isDataLoading(false);
       Get.off(() => const HistoryFormView());
       storeResponse = response;

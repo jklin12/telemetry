@@ -21,7 +21,6 @@ class _HistoryIndexViewState extends State<HistoryIndexView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getStationList(_authManager.getToken()!);

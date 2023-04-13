@@ -1,4 +1,4 @@
-package com.example.telemetry
+package com.bbwso.temetry.merapi
 
 import io.flutter.embedding.android.FlutterActivity
 

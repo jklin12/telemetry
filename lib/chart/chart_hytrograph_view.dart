@@ -23,7 +23,6 @@ class _ChartHytrographViewState extends State<ChartHytrographView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getData(selectedDate.text, '10', _authManager.getToken()!);

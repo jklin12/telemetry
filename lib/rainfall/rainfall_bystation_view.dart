@@ -27,7 +27,6 @@ class _RainfallBystationViewState extends State<RainfallBystationView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getDailyRainfall(

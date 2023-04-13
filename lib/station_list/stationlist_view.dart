@@ -18,7 +18,6 @@ class _StationListViewState extends State<StationListView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getStationList(_authManager.getToken()!);

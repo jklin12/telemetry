@@ -24,7 +24,6 @@ class _ChartRainFallViewState extends State<ChartRainFallView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getDailyRainfall(

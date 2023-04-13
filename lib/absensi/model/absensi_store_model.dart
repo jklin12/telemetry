@@ -2,7 +2,6 @@
 //
 //     final absensiStoreModel = absensiStoreModelFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 import 'dart:convert';
 
 AbsensiStoreModel absensiStoreModelFromJson(String str) =>

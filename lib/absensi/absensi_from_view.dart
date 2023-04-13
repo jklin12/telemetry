@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -35,7 +37,6 @@ class _AbsensiFormViewState extends State<AbsensiFormView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
 
@@ -44,7 +45,7 @@ class _AbsensiFormViewState extends State<AbsensiFormView> {
         currentPosition = position;
         isLocationLoading = false;
       });
-      print(currentPosition);
+      //print(currentPosition);
     });
   }
 
@@ -60,7 +61,7 @@ class _AbsensiFormViewState extends State<AbsensiFormView> {
     final String formated = formatter.format(now);
     setState(() {
       formatted = formated;
-      print(formatted);
+      //print(formatted);
     });
   }
 
@@ -73,9 +74,9 @@ class _AbsensiFormViewState extends State<AbsensiFormView> {
         currentAddress =
             "${place.subLocality},${place.locality}, ${place.country}";
       });
-      print(currentAddress);
+      //print(currentAddress);
     } catch (e) {
-      print(e);
+      //print(e);
     }
   }
 

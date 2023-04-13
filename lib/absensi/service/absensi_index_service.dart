@@ -9,7 +9,7 @@ class AbsensiIndexService extends GetConnect {
 
   Future<AbsensiIndexModel?> fecthData(String token) async {
     final response =
-        await get("${loginUrl}", headers: {'Authorization': 'Bearer $token'});
+        await get(loginUrl, headers: {'Authorization': 'Bearer $token'});
     if (response.statusCode == HttpStatus.ok) {
       return AbsensiIndexModel.fromJson(response.body);
     } else {
@@ -19,7 +19,7 @@ class AbsensiIndexService extends GetConnect {
 
   Future<AbsensiStoreModel?> storeData(String token, FormData postval) async {
     final response = await post(
-      "${loginUrl}",
+      loginUrl,
       postval,
       headers: {'Authorization': 'Bearer $token'},
     );

@@ -34,7 +34,6 @@ class _HistoryEditViewState extends State<HistoryEditView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     titleController.text = widget.title ?? '';
     bodyController.text = widget.body ?? '';

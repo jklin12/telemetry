@@ -2,7 +2,6 @@
 //
 //     final absensiIndexModel = absensiIndexModelFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 import 'dart:convert';
 
 AbsensiIndexModel absensiIndexModelFromJson(String str) =>

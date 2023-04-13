@@ -21,7 +21,6 @@ class _FlowViewState extends State<FlowView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _authManager = Get.find();
     viewModel.getData(selectedDate.text, _authManager.getToken()!);
