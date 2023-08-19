@@ -54,6 +54,7 @@ dependencies:
   image: ^4.0.15
   geocoding: ^2.1.0
   image_gallery_saver: ^1.7.1
+  firebase_core: ^2.15.1
 
 dev_dependencies:
   flutter_test:
