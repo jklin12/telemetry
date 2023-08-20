@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "984112335409",
+    "project_id": "telemetry-555a6",
+    "storage_bucket": "telemetry-555a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984112335409:android:b635f2e3ac575904e1e310",
+        "android_client_info": {
+          "package_name": "com.bbwso.temetry.merapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984112335409-b9qrr4ubh9goo12n0dinglpuhia4mnd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyKvl05jKE0O9tiKPL1MQVrJCd0yyavC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984112335409-b9qrr4ubh9goo12n0dinglpuhia4mnd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

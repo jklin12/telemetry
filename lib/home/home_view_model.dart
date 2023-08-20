@@ -1,4 +1,5 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -22,6 +23,49 @@ class HomeViewModel extends GetxController {
 
     service = Get.put(HomeService());
     logoutService = Get.put(LogoutService());
+    registerFcm();
+    initFcm();
+  }
+
+  void registerFcm() async {
+    await FirebaseMessaging.instance.subscribeToTopic("all_user");
+    //final fcmToken = await FirebaseMessaging.instance.getToken();
+   // print("FCMToken $fcmToken");
+  }
+
+  void initFcm() async {
+    FirebaseMessaging.instance.getNotificationSettings().then((value) {
+      if (value.authorizationStatus != AuthorizationStatus.authorized) {
+        FirebaseMessaging.instance.requestPermission(
+          alert: true,
+          announcement: false,
+          badge: true,
+          carPlay: false,
+          criticalAlert: false,
+          provisional: false,
+          sound: true,
+        );
+      }
+    });
+
+    FirebaseMessaging.instance.getInitialMessage().then((message) {
+      print("initial_message : ${message}");
+    });
+
+    FirebaseMessaging.onMessage.listen(showFlutterNotification);
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      print('A new onMessageOpenedApp event was published!, ${message.data}');
+      if (message.data['type'] == 'agenda') {}
+    });
+  }
+
+  void showFlutterNotification(RemoteMessage message) {
+    RemoteNotification? notification = message.notification;
+    AndroidNotification? android = message.notification?.android;
+    if (notification != null && android != null && !kIsWeb) {
+      print("shwo local notification, message : ${message.data}");
+    }
   }
 
   Future<void> getData(AuthenticationManager authenticationManager) async {
