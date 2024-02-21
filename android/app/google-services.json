@@ -29,6 +29,49 @@
             {
               "client_id": "984112335409-b9qrr4ubh9goo12n0dinglpuhia4mnd1.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "984112335409-j967ss4uh10q55psnf99c43kkdkr72nr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.telemetry"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984112335409:android:81ac6ea2af53841de1e310",
+        "android_client_info": {
+          "package_name": "com.technophoria.id.temetry.merapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984112335409-b9qrr4ubh9goo12n0dinglpuhia4mnd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyKvl05jKE0O9tiKPL1MQVrJCd0yyavC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984112335409-b9qrr4ubh9goo12n0dinglpuhia4mnd1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "984112335409-j967ss4uh10q55psnf99c43kkdkr72nr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.telemetry"
+              }
             }
           ]
         }

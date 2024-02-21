@@ -1,4 +1,4 @@
-package com.bbwso.temetry.merapi
+package com.technophoria.id.temetry.merapi
 
 import io.flutter.embedding.android.FlutterActivity
 
