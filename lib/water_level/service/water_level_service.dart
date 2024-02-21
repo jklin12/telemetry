@@ -10,7 +10,7 @@ class WaterLevelService extends GetConnect {
       String selectedDate, String stationId, String token) async {
     final response = await get(loginUrl,
         headers: {'Authorization': 'Bearer $token'},
-        query: {"date": selectedDate});
+        query: {"date": selectedDate,"interval" : "10"});
     if (response.statusCode == HttpStatus.ok) {
       return WaterLevelModel.fromJson(response.body);
     } else {
@@ -18,3 +18,4 @@ class WaterLevelService extends GetConnect {
     }
   }
 }
+
